@@ -1,6 +1,11 @@
+import { BrowserRouter } from "react-router-dom";
+import Menu from "./components/Menu";
+
 function App() {
   return (
-    <h1>Hello World!</h1>
+    <BrowserRouter>
+      <Menu/>
+    </BrowserRouter>
   );
 }
 
