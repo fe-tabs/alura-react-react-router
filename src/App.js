@@ -4,6 +4,7 @@ import Home from "pages/Home";
 import AboutMe from "pages/AboutMe";
 import PageContent from "components/PageContent";
 import Post from "pages/Post";
+import NotFound from "pages/NotFound";
 
 function App() {
   return (
@@ -13,11 +14,11 @@ function App() {
       <Routes>
         <Route path="/" element={<PageContent/>}>
           <Route path="" element={<Home/>} />
-          <Route path="posts/:id" element={<Post/>} />
           <Route path="about-me" element={<AboutMe/>} />
         </Route>
+        <Route path="posts/:id" element={<Post/>} />
 
-        <Route path="*" element={<div>Página não encontrada</div>}/>
+        <Route path="*" element={<NotFound/>}/>
       </Routes>
     </BrowserRouter>
   );
