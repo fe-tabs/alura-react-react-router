@@ -3,13 +3,17 @@
   position: relative;
 }
 
+.article__container {
+  padding: 2.5rem 7.5rem 4.5rem;
+}
+
+.article__cover,
 .article__title {
   height: 204px;
 }
 
 .article__cover {
-  max-width: 100%;
-  width: calc(100% - 32px);
+  width: 100%;
   opacity: 0.3;
   z-index: -1;
   overflow: hidden;
@@ -18,10 +22,9 @@
 }
 
 .article__cover__image {
-  height: 204px;
   width: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: 0 -2rem;
 }
 
 .article__title {
@@ -32,17 +35,10 @@
   align-items: center;
 }
 
-.article {
-  padding: 2.5rem 7.5rem 4.5rem;
-}
-
 @media (max-width: 744px) {
-  .article {
+  .article__container {
     padding: 2rem 1.5rem 1.5rem;
   }
-}
-
-@media (max-width: 744px) {
 
   .article__cover,
   .article__title {
@@ -52,9 +48,5 @@
   .article__title {
     padding: 0 1rem;
     font-size: 2rem;
-  }
-
-  .article {
-    padding: 2rem 1rem 1.5rem;
   }
 }
