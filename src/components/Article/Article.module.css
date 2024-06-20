@@ -29,10 +29,16 @@
 
 .article__title {
   font-family: var(--fonte-secundaria);
-  padding: 0 7.5rem;
-  font-size: 4rem;
+  padding: 0 7.5rem 2rem;
+  font-size: 3.2rem;
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 992px) {
+  .article__title {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 744px) {
@@ -46,7 +52,7 @@
   }
 
   .article__title {
-    padding: 0 1rem;
     font-size: 2rem;
+    padding: 0 1rem 1rem;
   }
 }
