@@ -23,32 +23,12 @@
   margin: 1.5rem 0 1.75rem;
 }
 
-.post__button {
-  display: inline-block;
-  border-radius: 24px;
-  padding: 0.75rem 1.5rem;
-  font-size: 1.125rem;
-  line-height: 1.125rem;
-  background-color: var(--blue-mid);
-  color: var(--white);
-  border: 3px solid var(--blue-mid);
-  cursor: pointer;
-  transition: 0.2s
-}
-
-.post__button:hover {
-  border: 3px solid var(--blue-dark);
-}
-
 @media (max-width: 1100px) {
   .post {
-      width: 336px;
+    width: 336px;
   }
+
   .post__title {
-      font-weight: 600;
-  }
-  .post__button {
-      padding: 0.6875rem 1.5rem;
-      font-size: 1.375rem;
+    font-weight: 600;
   }
 }
