@@ -1,6 +1,7 @@
-import styles from './Post.module.css';
+import { Link } from 'react-router-dom';
+import styles from './PostCard.module.css';
 
-export default function Post({ post }) {
+export default function PostCard({ post }) {
   return(
     <div className={styles['post']}>
       <img
@@ -9,7 +10,9 @@ export default function Post({ post }) {
         alt={post.title}
       />
       <h2 className={styles['post__title']}>{post.title}</h2>
-      <button className={styles['post__button']}>Ler</button>
+      <Link to={`/posts/${post.id}`}>
+        <button className={styles['post__button']}>Ler</button>
+      </Link>
     </div>
   );
 }
